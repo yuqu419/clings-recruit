@@ -10,9 +10,13 @@ on:
     branches: [main, master]
 
 jobs:
+
   build:
     name: Autograding
     runs-on: ubuntu-latest
+    permissions:                   
+      checks: write                
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - name: Install clings
