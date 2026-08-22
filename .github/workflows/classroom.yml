@@ -11,6 +11,8 @@ on:
 
 jobs:
   build:
+  contents: read
+      checks: write
     name: Autograding
     runs-on: ubuntu-latest
     steps:
