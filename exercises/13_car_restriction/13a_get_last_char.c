@@ -14,11 +14,20 @@
 
 #include <stdio.h>
 
-char get_last_char(char str[]) {
-#error TODO: Fix this exercise. Run "clings hint" for help.
+char get_last_char(char str[])
+{
+    char c;
+    int i = 0;
+    while (str[i])
+    {
+        c = str[i];
+        i++;
+    }
+    return c;
 }
 
-int main(void) {
+int main(void)
+{
     char buf[64];
 
     scanf("%s", buf);

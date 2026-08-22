@@ -13,15 +13,18 @@
 
 #include <stdio.h>
 
-int count_bits(int num) {
+int count_bits(int num)
+{
     int sum = 0;
     int i;
-
-#error TODO: Fix this exercise. Run "clings hint" for help.
+    for (i = 0; i < 32; i++)
+        if (num & (1 << i))
+            sum++;
     return sum;
 }
 
-int main(void) {
+int main(void)
+{
     int num;
 
     scanf("%d", &num);

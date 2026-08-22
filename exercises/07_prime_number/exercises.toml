@@ -1,11 +1,12 @@
 [[exercises]]
 name = "07a_max_prime"
-title = "函数+循环: 100 以内最大素数"
+title = "函数+循环: 100以内最大素数"
 unit = "unit1"
 lesson = 7
 order = 11
 mode = "stdout"
 source = "07a_prime.c"
+lesson_url = "https://cnb.cool/q.qq/opencamp-c-2026-summer/Unit-1-C-Fundamentals/-/tree/main/lessons/07_prime_number"
 hint = '''
 如何判断一个数是不是素数 (质数)？
 

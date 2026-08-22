@@ -25,7 +25,15 @@
  * Return value:  how many digit in this num
  */
 int find(int num, int digit) {
-#error TODO: Fix this exercise. Run "clings hint" for help.
+    int count = 0;
+    //121 /  10 = 12 ..1 
+    while(1){
+        if(num == 0) break;
+        int cur = num % 10;
+        if(cur == digit) count++;
+        num /= 10;
+    }
+    return count;
 }
 
 int main(void) {

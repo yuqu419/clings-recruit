@@ -17,10 +17,13 @@
 #include <stdio.h>
 
 int main(void) {
-    int i = 0;
-    int j = 0;
-
-#error TODO: Nested for loops for multiplication table. Run "clings hint" for help.
+    int i = 1;
+    for (; i < 10; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("%d*%d=%d\t", j, i, i * j);
+        }
+        printf("\n");
+    }
 
     return 0;
 }
