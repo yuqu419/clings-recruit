@@ -9,15 +9,12 @@
  *       2. 如果 i 是奇数 (i % 2 == 1)，用 continue 跳过
  *       3. 否则累加 sum += i
  *       4. 打印 "sum = %d\n" (结果应为 2550)
- *
  * 验证：stdout 精确匹配 "sum = 2550\n"
  */
-
 #include <stdio.h>
 
 int main(void) {
-    int i = 0;
-    int sum = 0;
+    int sum = 0,i= 0;
 
     for (; i <= 100; i++) {
         if (i % 2 == 1) continue;
